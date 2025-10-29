@@ -272,7 +272,7 @@ const Index = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-3 border-b">
                     <span className="text-lg">Выезд мастера</span>
-                    <span className="text-xl font-bold text-primary">Бесплатно</span>
+                    <span className="text-xl font-bold text-primary">500 ₽</span>
                   </div>
                   <div className="flex justify-between items-center py-3 border-b">
                     <span className="text-lg">Минимальный заказ</span>
