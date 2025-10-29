@@ -190,6 +190,71 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="portfolio" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">Наши работы</h2>
+            <p className="text-lg text-gray-600">Результаты говорят сами за себя</p>
+          </div>
+          
+          <div className="max-w-6xl mx-auto space-y-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="space-y-4">
+                <h3 className="text-2xl font-bold text-gray-900">Электромонтажные работы</h3>
+                <div className="space-y-3">
+                  <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/2290166f-2258-4976-a76b-89e777208a1e/files/5b69215f-cdb6-4448-addb-ec5f0893b52c.jpg"
+                      alt="До ремонта"
+                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute top-4 left-4 bg-red-500 text-white px-4 py-2 rounded-full font-bold">
+                      ДО
+                    </div>
+                  </div>
+                  <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/2290166f-2258-4976-a76b-89e777208a1e/files/eb30972f-cb72-4700-84a5-45d6f15b6f1d.jpg"
+                      alt="После ремонта"
+                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute top-4 left-4 bg-green-500 text-white px-4 py-2 rounded-full font-bold">
+                      ПОСЛЕ
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <h3 className="text-2xl font-bold text-gray-900">Сантехнические работы</h3>
+                <div className="space-y-3">
+                  <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/2290166f-2258-4976-a76b-89e777208a1e/files/89e4ccb4-2d13-4de1-9014-fb2b926a42f7.jpg"
+                      alt="До ремонта"
+                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute top-4 left-4 bg-red-500 text-white px-4 py-2 rounded-full font-bold">
+                      ДО
+                    </div>
+                  </div>
+                  <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/2290166f-2258-4976-a76b-89e777208a1e/files/3aea5b61-24f3-49c3-94fe-5c8dc4815d33.jpg"
+                      alt="После ремонта"
+                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute top-4 left-4 bg-green-500 text-white px-4 py-2 rounded-full font-bold">
+                      ПОСЛЕ
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="prices" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -343,6 +408,7 @@ const Index = () => {
             </p>
             <div className="flex justify-center gap-6 mb-6">
               <a href="#services" className="hover:text-primary transition-colors">Услуги</a>
+              <a href="#portfolio" className="hover:text-primary transition-colors">Портфолио</a>
               <a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a>
               <a href="#prices" className="hover:text-primary transition-colors">Цены</a>
               <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
