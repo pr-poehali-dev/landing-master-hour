@@ -297,6 +297,15 @@ const Index = () => {
                     <Icon name="Phone" size={22} className="text-primary" />
                     <span className="text-lg font-medium">8 (499) 201-31-35</span>
                   </div>
+                  <a 
+                    href="https://wa.me/79966547924" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-gray-700 hover:text-green-600 transition-colors"
+                  >
+                    <Icon name="MessageCircle" size={22} className="text-green-600" />
+                    <span className="text-lg">WhatsApp: +7 (996) 654-79-24</span>
+                  </a>
                   <div className="flex items-center gap-3 text-gray-700">
                     <Icon name="Mail" size={22} className="text-primary" />
                     <span className="text-lg">master@example.ru</span>
@@ -311,6 +320,16 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <a
+        href="https://wa.me/79966547924"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 animate-scale-in"
+        aria-label="Написать в WhatsApp"
+      >
+        <Icon name="MessageCircle" size={32} />
+      </a>
 
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
