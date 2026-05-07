@@ -220,6 +220,18 @@ const Index = () => {
           </h1>
           <div className="flex items-center gap-3">
             <a
+              href="https://vk.com/club215390521?act=s&id=215390521"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:flex flex-col items-center gap-0.5 text-sm font-medium text-gray-600 hover:text-primary transition-colors border border-gray-200 rounded-lg px-3 py-2"
+            >
+              <span className="flex items-center gap-2">
+                <Icon name="Users" size={16} className="text-primary" />
+                ВКонтакте
+              </span>
+              <span className="text-[10px] text-gray-400 font-normal leading-tight text-center">Официальный канал<br/>ГБУ «Жилищник района Отрадное»</span>
+            </a>
+            <a
               href="https://max.ru/id7715488558_gos"
               target="_blank"
               rel="noopener noreferrer"
