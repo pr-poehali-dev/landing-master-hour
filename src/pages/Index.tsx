@@ -55,22 +55,40 @@ const Index = () => {
 
   const reviews = [
     {
-      name: "Анна Петрова",
+      name: "Ольга",
       rating: 5,
-      text: "Отличный мастер! Быстро установил розетки и выключатели. Все аккуратно, чисто. Рекомендую!",
-      date: "15 октября 2024"
+      service: "Монтаж осветительных приборов",
+      text: "Специалист Иван, приехал как договорились, работу сделал быстро и качественно! Спасибо, буду пользоваться вашими услугами.",
+      date: "23 сентября 2025",
+      price: "2000 ₽",
+      source: "Профи.ру"
     },
     {
-      name: "Дмитрий Соколов",
+      name: "Александра",
       rating: 5,
-      text: "Вызывал для сборки кухни. Работа выполнена качественно и в срок. Мастер вежливый, профессионал своего дела.",
-      date: "8 октября 2024"
+      service: "Сантехника",
+      text: "Здравствуйте. Мне все понравилось. Мастер профессионал своего дела, сразу понял в чем проблема, затянул колбы, еще мы заменим резинки на колбах и будет все отлично. Рекомендую специалистов.",
+      date: "7 октября 2025",
+      price: "1000 ₽",
+      source: "Профи.ру"
     },
     {
-      name: "Елена Морозова",
+      name: "Инна",
       rating: 5,
-      text: "Спасибо за помощь! Устранили протечку крана, заменили смеситель. Все быстро и по честной цене.",
-      date: "3 октября 2024"
+      service: "Устранение течи • Ремонт труб",
+      text: "Приехал специалист Иван поменять металлопластмассовую трубочку в стояке, т.к. она подтекала. Задача оказалась намного сложнее. Пришлось вызывать на помощь бригаду. Всё сделали. Я довольна. Как инвалиду сделали на оплату скидку. Спасибо. Впредь буду обращаться к ним.",
+      date: "20 октября 2025",
+      price: null,
+      source: "Профи.ру"
+    },
+    {
+      name: "Маргарита",
+      rating: 5,
+      service: "Ремонт торшеров",
+      text: "Задача выполнена. Очень приятный сотрудник Виталий. Включала в себя замену выключателя на светильнике. Все сделано, благодарю. Оплата согласно прайсу ГБУ «Жилищник района Отрадное»",
+      date: "31 октября 2025",
+      price: "2500 ₽",
+      source: "Профи.ру"
     }
   ];
 
@@ -178,22 +196,31 @@ const Index = () => {
             <p className="text-lg text-gray-600">Нам доверяют тысячи семей</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {reviews.map((review, index) => (
               <Card key={index} className="border-2 hover:shadow-lg transition-shadow animate-scale-in" style={{ animationDelay: `${index * 150}ms` }}>
-                <CardHeader>
-                  <div className="flex items-center justify-between mb-2">
-                    <CardTitle className="text-lg">{review.name}</CardTitle>
-                    <div className="flex gap-1">
+                <CardHeader className="pb-3">
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <CardTitle className="text-lg">{review.name}</CardTitle>
+                      <p className="text-sm text-primary font-medium mt-0.5">{review.service}</p>
+                    </div>
+                    <span className="text-xs bg-yellow-50 text-yellow-700 border border-yellow-200 px-2 py-1 rounded-full font-medium whitespace-nowrap">{review.source}</span>
+                  </div>
+                  <div className="flex items-center gap-2 mt-2">
+                    <div className="flex gap-0.5">
                       {[...Array(review.rating)].map((_, i) => (
-                        <Icon key={i} name="Star" size={18} className="text-yellow-500 fill-yellow-500" />
+                        <Icon key={i} name="Star" size={16} className="text-yellow-500 fill-yellow-500" />
                       ))}
                     </div>
+                    <span className="text-sm text-gray-400">{review.date}</span>
                   </div>
-                  <CardDescription className="text-sm text-gray-500">{review.date}</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700 leading-relaxed">{review.text}</p>
+                <CardContent className="pt-0">
+                  <p className="text-gray-700 leading-relaxed text-sm">{review.text}</p>
+                  {review.price && (
+                    <p className="mt-3 text-sm text-gray-500">Стоимость работ: <span className="font-semibold text-gray-700">{review.price}</span></p>
+                  )}
                 </CardContent>
               </Card>
             ))}
