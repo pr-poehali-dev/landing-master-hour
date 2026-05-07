@@ -91,10 +91,10 @@ const Index = () => {
             <Icon name="Wrench" size={28} />
             Мастер на час
           </h1>
-          <a href="tel:89966547924">
+          <a href="tel:84992013135">
             <Button className="bg-primary hover:bg-primary/90">
               <Icon name="Phone" size={18} className="mr-2" />
-              8 (996) 654-79-24
+              8 (499) 201-31-35
             </Button>
           </a>
         </div>
