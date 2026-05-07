@@ -514,8 +514,8 @@ const Index = () => {
               <a target="_blank" rel="nofollow" href="https://dkfrh.com/g/g868s26t045da5bb3afda277ac0837/?i=4&subid=master&erid=2bL9aMPo2e49hMef4pfysY26Ez" className="flex-shrink-0">
                 <img width="200" height="300" border={0} src="https://aflink.ru/b/g868s26t045da5bb3afda277ac0837/" alt="OZON Travel" className="rounded-xl shadow-md hover:shadow-lg transition-shadow" />
               </a>
-              <a target="_blank" rel="nofollow" href="https://dorinebeaumont.com/g/6digez9z0n5da5bb3afdccddac0aa6/?i=4&subid=master&erid=2bL9aMPo2e49hMef4piUPtz5CG" className="flex-shrink-0">
-                <img width="200" height="200" border={0} src="https://aflink.ru/b/6digez9z0n5da5bb3afdccddac0aa6/" alt="Broadway-moscow" className="rounded-xl shadow-md hover:shadow-lg transition-shadow" />
+              <a target="_blank" rel="nofollow" href="https://dorinebeaumont.com/g/1f04hgqyjx5da5bb3afdccddac0aa6/?i=4&subid=master&erid=2bL9aMPo2e49hMef4piUPtz5CJ" className="flex-shrink-0">
+                <img width="240" height="400" border={0} src="https://aflink.ru/b/1f04hgqyjx5da5bb3afdccddac0aa6/" alt="Broadway-moscow" className="rounded-xl shadow-md hover:shadow-lg transition-shadow" />
               </a>
 
             </div>
