@@ -434,89 +434,63 @@ const Index = () => {
 
       <section id="contact" className="py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12 animate-fade-in">
               <h2 className="text-4xl font-bold mb-4 text-gray-900">Связаться с нами</h2>
-              <p className="text-lg text-gray-600">Оставьте заявку и мы перезвоним в течение 15 минут</p>
+              <p className="text-lg text-gray-600">Выберите удобный способ — ответим быстро</p>
             </div>
-            
-            <Card className="border-2 shadow-xl">
-              <CardContent className="pt-6">
-                <form onSubmit={handleSubmit} className="space-y-6">
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a href="tel:84992013135" className="group">
+                <div className="flex items-center gap-4 bg-white border-2 border-gray-100 hover:border-primary/40 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Icon name="Phone" size={26} className="text-primary" />
+                  </div>
                   <div>
-                    <label className="block text-sm font-medium mb-2 text-gray-700">
-                      Ваше имя
-                    </label>
-                    <Input
-                      placeholder="Иван Иванов"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      required
-                      className="text-base"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium mb-2 text-gray-700">
-                      Телефон
-                    </label>
-                    <Input
-                      type="tel"
-                      placeholder="+7 (999) 123-45-67"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      required
-                      className="text-base"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium mb-2 text-gray-700">
-                      Описание задачи
-                    </label>
-                    <Textarea
-                      placeholder="Расскажите, какая помощь вам нужна..."
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      rows={4}
-                      className="text-base"
-                    />
-                  </div>
-                  
-                  <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-lg py-6">
-                    <Icon name="Send" size={20} className="mr-2" />
-                    Отправить заявку
-                  </Button>
-                </form>
-                
-                <div className="mt-8 pt-8 border-t space-y-4">
-                  <div className="flex items-center gap-3 text-gray-700">
-                    <Icon name="Phone" size={22} className="text-primary" />
-                    <span className="text-lg font-medium">8 (499) 201-31-35</span>
-                  </div>
-                  <a 
-                    href="https://wa.me/79966547924" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 text-gray-700 hover:text-green-600 transition-colors"
-                  >
-                    <Icon name="MessageCircle" size={22} className="text-green-600" />
-                    <span className="text-lg">WhatsApp: +7 (996) 654-79-24</span>
-                  </a>
-                  <a
-                    href="mailto:KomOtradnoe@yandex.ru"
-                    className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
-                  >
-                    <Icon name="Mail" size={22} className="text-primary" />
-                    <span className="text-lg">KomOtradnoe@yandex.ru</span>
-                  </a>
-                  <div className="flex items-center gap-3 text-gray-700">
-                    <Icon name="Clock" size={22} className="text-primary" />
-                    <span className="text-lg">Пн–Пт с 8:00 до 17:00</span>
+                    <p className="text-xs text-gray-400 mb-0.5">Телефон</p>
+                    <p className="text-lg font-bold text-gray-900">8 (499) 201-31-35</p>
+                    <p className="text-xs text-gray-400 mt-0.5">Позвонить сейчас</p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </a>
+
+              <a href="https://wa.me/79966547924" target="_blank" rel="noopener noreferrer" className="group">
+                <div className="flex items-center gap-4 bg-white border-2 border-gray-100 hover:border-green-300 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="w-14 h-14 bg-green-50 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
+                    <Icon name="MessageCircle" size={26} className="text-green-600" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-400 mb-0.5">WhatsApp</p>
+                    <p className="text-lg font-bold text-gray-900">+7 (996) 654-79-24</p>
+                    <p className="text-xs text-gray-400 mt-0.5">Написать в чат</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="mailto:KomOtradnoe@yandex.ru" className="group">
+                <div className="flex items-center gap-4 bg-white border-2 border-gray-100 hover:border-primary/40 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Icon name="Mail" size={26} className="text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-400 mb-0.5">Электронная почта</p>
+                    <p className="text-base font-bold text-gray-900">KomOtradnoe@yandex.ru</p>
+                    <p className="text-xs text-gray-400 mt-0.5">Написать письмо</p>
+                  </div>
+                </div>
+              </a>
+
+              <div className="flex items-center gap-4 bg-white border-2 border-gray-100 rounded-2xl p-5 shadow-sm">
+                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Icon name="Clock" size={26} className="text-primary" />
+                </div>
+                <div>
+                  <p className="text-xs text-gray-400 mb-0.5">График работы</p>
+                  <p className="text-lg font-bold text-gray-900">Пн–Пт</p>
+                  <p className="text-sm text-gray-600">с 8:00 до 17:00</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
