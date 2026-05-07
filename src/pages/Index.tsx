@@ -113,10 +113,12 @@ const Index = () => {
                   <Icon name="Phone" size={20} className="mr-2" />
                   Вызвать мастера
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2">
-                  <Icon name="Calculator" size={20} className="mr-2" />
-                  Узнать цены
-                </Button>
+                <a href="https://gbuotradnoe.mos.ru/platnye-uslugi/%D0%A0%D0%B0%D1%81%D1%86%D0%B5%D0%BD%D0%BA%D0%B8.pdf" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2">
+                    <Icon name="Calculator" size={20} className="mr-2" />
+                    Узнать цены
+                  </Button>
+                </a>
               </div>
             </div>
             <div className="animate-scale-in hidden md:block">
