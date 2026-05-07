@@ -126,7 +126,7 @@ const Index = () => {
                 Ваш комфорт — наша забота!
               </h2>
               <p className="text-xl md:text-2xl text-gray-700 mb-8 font-medium">
-                Мелкий ремонт и бытовые услуги по честным ценам
+                Мелкий ремонт и бытовые услуги по ценам утвержденным Префектурой СВАО г. Москвы
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="tel:89966547924">
