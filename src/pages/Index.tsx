@@ -109,10 +109,12 @@ const Index = () => {
                 Мелкий ремонт и бытовые услуги по честным ценам
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
-                  <Icon name="Phone" size={20} className="mr-2" />
-                  Вызвать мастера
-                </Button>
+                <a href="tel:89966547924">
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
+                    <Icon name="Phone" size={20} className="mr-2" />
+                    Вызвать мастера
+                  </Button>
+                </a>
                 <a href="https://gbuotradnoe.mos.ru/platnye-uslugi/%D0%A0%D0%B0%D1%81%D1%86%D0%B5%D0%BD%D0%BA%D0%B8.pdf" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2">
                     <Icon name="Calculator" size={20} className="mr-2" />
