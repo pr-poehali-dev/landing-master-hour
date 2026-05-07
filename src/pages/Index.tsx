@@ -179,35 +179,33 @@ const Index = () => {
             <Icon name="Wrench" size={28} />
             <span>Мастер на час <span className="text-base font-normal text-gray-500">в Отрадном СВАО г. Москвы</span></span>
           </h1>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <a
               href="https://vk.com/club215390521?act=s&id=215390521"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex flex-col items-center gap-0.5 text-sm font-medium text-gray-600 hover:text-primary transition-colors border border-gray-200 rounded-lg px-3 py-2"
+              className="flex flex-col items-center gap-0.5 text-sm font-medium text-gray-600 hover:text-primary transition-colors border border-gray-200 rounded-lg px-2 py-2 sm:px-3"
+              title="ВКонтакте — Официальный канал ГБУ «Жилищник района Отрадное»"
             >
-              <span className="flex items-center gap-2">
-                <Icon name="Users" size={16} className="text-primary" />
-                ВКонтакте
-              </span>
-              <span className="text-[10px] text-gray-400 font-normal leading-tight text-center">Официальный канал<br/>ГБУ «Жилищник района Отрадное»</span>
+              <Icon name="Users" size={18} className="text-primary" />
+              <span className="hidden sm:block text-[10px] text-gray-400 leading-tight text-center">ВКонтакте</span>
+              <span className="hidden sm:block text-[9px] text-gray-400 leading-tight text-center">Официальный канал</span>
             </a>
             <a
               href="https://max.ru/id7715488558_gos"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex flex-col items-center gap-0.5 text-sm font-medium text-gray-600 hover:text-primary transition-colors border border-gray-200 rounded-lg px-3 py-2"
+              className="flex flex-col items-center gap-0.5 text-sm font-medium text-gray-600 hover:text-primary transition-colors border border-gray-200 rounded-lg px-2 py-2 sm:px-3"
+              title="MAX — Официальный канал ГБУ «Жилищник района Отрадное»"
             >
-              <span className="flex items-center gap-2">
-                <Icon name="Send" size={16} className="text-primary" />
-                MAX
-              </span>
-              <span className="text-[10px] text-gray-400 font-normal leading-tight text-center">Официальный канал<br/>ГБУ «Жилищник района Отрадное»</span>
+              <Icon name="Send" size={18} className="text-primary" />
+              <span className="hidden sm:block text-[10px] text-gray-400 leading-tight text-center">MAX</span>
+              <span className="hidden sm:block text-[9px] text-gray-400 leading-tight text-center">Официальный канал</span>
             </a>
             <a href="tel:84992013135">
-              <Button className="bg-primary hover:bg-primary/90">
-                <Icon name="Phone" size={18} className="mr-2" />
-                8 (499) 201-31-35
+              <Button className="bg-primary hover:bg-primary/90 text-sm sm:text-base px-3 sm:px-4">
+                <Icon name="Phone" size={16} className="sm:mr-2" />
+                <span className="hidden sm:inline">8 (499) 201-31-35</span>
               </Button>
             </a>
           </div>
