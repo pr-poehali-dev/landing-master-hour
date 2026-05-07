@@ -3,11 +3,24 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
+function useScrollReveal() {
+  useEffect(() => {
+    const els = document.querySelectorAll(".scroll-reveal");
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); }),
+      { threshold: 0.12 }
+    );
+    els.forEach(el => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+}
+
 const Index = () => {
+  useScrollReveal();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -242,7 +255,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="services" className="py-20 bg-white">
+      <section id="services" className="py-20 bg-white scroll-reveal">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">Наши услуги</h2>
@@ -310,7 +323,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="reviews" className="py-20 bg-gradient-to-br from-blue-50 to-white">
+      <section id="reviews" className="py-20 bg-gradient-to-br from-blue-50 to-white scroll-reveal">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">Отзывы клиентов</h2>
@@ -349,7 +362,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="portfolio" className="py-20 bg-white">
+      <section id="portfolio" className="py-20 bg-white scroll-reveal">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">Наши работы</h2>
@@ -432,7 +445,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
+      <section id="contact" className="py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5 scroll-reveal">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12 animate-fade-in">
