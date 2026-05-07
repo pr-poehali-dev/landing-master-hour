@@ -574,6 +574,16 @@ const Index = () => {
               <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
               <a href="/articles" className="hover:text-primary transition-colors font-medium text-white/90">Полезные советы</a>
             </div>
+            <div className="border-t border-gray-700 pt-6 mb-6 text-left bg-gray-800/50 rounded-xl p-5 text-sm text-gray-400 space-y-1">
+              <p className="text-gray-300 font-semibold mb-2 flex items-center gap-2">
+                <Icon name="ShieldCheck" size={16} className="text-primary" />
+                Аккредитация на право поверки водосчётчиков
+              </p>
+              <p><span className="text-gray-500">Организация:</span> ГБУ «Жилищник района Отрадное»</p>
+              <p><span className="text-gray-500">ИНН:</span> 7715488558</p>
+              <p><span className="text-gray-500">Номер аттестата:</span> RA.RU.315030</p>
+              <p><span className="text-gray-500">Адрес:</span> Россия, г. Москва, ул. Мусоргского, д. 7, помещение 2/1, пом. II, комната 16</p>
+            </div>
             <p className="text-gray-500 text-sm">
               © 2024 Мастер на час. Все права защищены.
             </p>
