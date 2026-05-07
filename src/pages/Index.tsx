@@ -506,6 +506,37 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-10 bg-white scroll-reveal">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <a
+              href="https://dkfrh.com/g/wu2hs1fhqf5da5bb3afda277ac083722856fc473/?erid=2bL9aMPo2e49hMef4pezu6VWvo&subid=master"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
+            >
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-primary to-orange-400 p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4" />
+                <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/4" />
+                <div className="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                  <div>
+                    <p className="text-white/80 text-sm font-medium mb-1">Реклама · erid: 2bL9aMPo2e49hMef4pezu6VWvo</p>
+                    <h3 className="text-white text-xl sm:text-2xl font-bold mb-2">Скидка на первый заказ</h3>
+                    <p className="text-white/90 text-base">Выгодные условия для жителей района Отрадное</p>
+                  </div>
+                  <div className="flex-shrink-0">
+                    <span className="inline-flex items-center gap-2 bg-white text-primary font-bold px-5 py-3 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors text-sm sm:text-base">
+                      Узнать подробнее
+                      <Icon name="ArrowRight" size={18} />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <a
         href="https://wa.me/79966547924"
         target="_blank"
