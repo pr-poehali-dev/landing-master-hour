@@ -517,29 +517,7 @@ const Index = () => {
               <a target="_blank" rel="nofollow" href="https://dorinebeaumont.com/g/6digez9z0n5da5bb3afdccddac0aa6/?i=4&subid=master&erid=2bL9aMPo2e49hMef4piUPtz5CG" className="flex-shrink-0">
                 <img width="200" height="200" border={0} src="https://aflink.ru/b/6digez9z0n5da5bb3afdccddac0aa6/" alt="Broadway-moscow" className="rounded-xl shadow-md hover:shadow-lg transition-shadow" />
               </a>
-              <a
-                target="_blank"
-                rel="nofollow"
-                href="https://tkprdm.ru/source/15796/campaign/1016/?erid=Y1jgkD6uB6jK1phqkTLTbNJPorAE"
-                className="group flex-shrink-0 w-[200px]"
-              >
-                <div className="rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden bg-gradient-to-b from-blue-500 to-blue-700 h-[300px] flex flex-col items-center justify-between p-5 text-white">
-                  <div className="text-center">
-                    <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Icon name="Tag" size={28} className="text-blue-600" />
-                    </div>
-                    <p className="font-bold text-lg leading-tight">ТАКпродам</p>
-                    <p className="text-blue-100 text-xs mt-1">Скидки на Ozon</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-3xl font-black">-50%</p>
-                    <p className="text-blue-100 text-xs mt-1">от цены товара</p>
-                  </div>
-                  <div className="w-full bg-white text-blue-700 font-bold text-sm text-center py-2 rounded-lg group-hover:bg-blue-50 transition-colors">
-                    Смотреть товары
-                  </div>
-                </div>
-              </a>
+
             </div>
             <p className="text-center text-[10px] text-gray-300 mt-3">erid: Y1jgkD6uB6jK1phqkTLTbNJPorAE</p>
           </div>
