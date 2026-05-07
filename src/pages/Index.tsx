@@ -107,7 +107,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-primary flex items-center gap-2">
             <Icon name="Wrench" size={28} />
-            Мастер на час
+            <span>Мастер на час <span className="text-base font-normal text-gray-500">в Отрадном СВАО г. Москвы</span></span>
           </h1>
           <a href="tel:84992013135">
             <Button className="bg-primary hover:bg-primary/90">
@@ -412,7 +412,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center gap-2 mb-4">
               <Icon name="Wrench" size={32} />
-              <h3 className="text-2xl font-bold">Мастер на час</h3>
+              <h3 className="text-2xl font-bold">Мастер на час <span className="text-base font-normal text-gray-400">в Отрадном СВАО г. Москвы</span></h3>
             </div>
             <p className="text-gray-400 mb-6">
               Профессиональные мастера для решения ваших бытовых задач
