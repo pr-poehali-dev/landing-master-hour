@@ -223,10 +223,13 @@ const Index = () => {
               href="https://max.ru/id7715488558_gos"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-primary transition-colors border border-gray-200 rounded-lg px-3 py-2"
+              className="hidden sm:flex flex-col items-center gap-0.5 text-sm font-medium text-gray-600 hover:text-primary transition-colors border border-gray-200 rounded-lg px-3 py-2"
             >
-              <Icon name="Send" size={16} className="text-primary" />
-              MAX
+              <span className="flex items-center gap-2">
+                <Icon name="Send" size={16} className="text-primary" />
+                MAX
+              </span>
+              <span className="text-[10px] text-gray-400 font-normal leading-tight text-center">Официальный канал<br/>ГБУ «Жилищник района Отрадное»</span>
             </a>
             <a href="tel:84992013135">
               <Button className="bg-primary hover:bg-primary/90">
