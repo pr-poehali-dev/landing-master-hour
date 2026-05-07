@@ -263,10 +263,26 @@ const Index = () => {
               </div>
             </div>
           </div>
+
+          <div className="max-w-6xl mx-auto mt-12 text-center">
+            <p className="text-lg text-gray-600 mb-6">Больше отзывов и работ на наших страницах:</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="https://www.avito.ru/user/8cb1c0e3aa6eadda271530fdcdcab569/profile" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 w-full sm:w-auto">
+                  <Icon name="ExternalLink" size={20} className="mr-2" />
+                  Авито
+                </Button>
+              </a>
+              <a href="https://profi.ru/profile/KirdeyYI/?ysclid=mov2lcb7y1982672858" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 w-full sm:w-auto">
+                  <Icon name="ExternalLink" size={20} className="mr-2" />
+                  Профи.ру
+                </Button>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-
-
 
       <section id="contact" className="py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
         <div className="container mx-auto px-4">
