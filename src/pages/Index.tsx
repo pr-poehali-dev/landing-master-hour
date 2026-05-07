@@ -218,12 +218,23 @@ const Index = () => {
             <Icon name="Wrench" size={28} />
             <span>Мастер на час <span className="text-base font-normal text-gray-500">в Отрадном СВАО г. Москвы</span></span>
           </h1>
-          <a href="tel:84992013135">
-            <Button className="bg-primary hover:bg-primary/90">
-              <Icon name="Phone" size={18} className="mr-2" />
-              8 (499) 201-31-35
-            </Button>
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href="https://max.ru/id7715488558_gos"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-primary transition-colors border border-gray-200 rounded-lg px-3 py-2"
+            >
+              <Icon name="Send" size={16} className="text-primary" />
+              MAX
+            </a>
+            <a href="tel:84992013135">
+              <Button className="bg-primary hover:bg-primary/90">
+                <Icon name="Phone" size={18} className="mr-2" />
+                8 (499) 201-31-35
+              </Button>
+            </a>
+          </div>
         </div>
       </header>
 
