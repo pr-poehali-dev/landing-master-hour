@@ -583,6 +583,15 @@ const Index = () => {
               <p><span className="text-gray-500">ИНН:</span> 7715488558</p>
               <p><span className="text-gray-500">Номер аттестата:</span> RA.RU.315030</p>
               <p><span className="text-gray-500">Адрес:</span> Россия, г. Москва, ул. Мусоргского, д. 7, помещение 2/1, пом. II, комната 16</p>
+              <a
+                href="https://pub.fsa.gov.ru/ral/view/70429/applicant"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 mt-2 text-primary hover:text-primary/80 transition-colors font-medium"
+              >
+                <Icon name="ExternalLink" size={14} />
+                Проверить в реестре Росаккредитации
+              </a>
             </div>
             <p className="text-gray-500 text-sm">
               © 2024 Мастер на час. Все права защищены.
