@@ -503,10 +503,13 @@ const Index = () => {
                     <Icon name="MessageCircle" size={22} className="text-green-600" />
                     <span className="text-lg">WhatsApp: +7 (996) 654-79-24</span>
                   </a>
-                  <div className="flex items-center gap-3 text-gray-700">
+                  <a
+                    href="mailto:KomOtradnoe@yandex.ru"
+                    className="flex items-center gap-3 text-gray-700 hover:text-primary transition-colors"
+                  >
                     <Icon name="Mail" size={22} className="text-primary" />
-                    <span className="text-lg">master@example.ru</span>
-                  </div>
+                    <span className="text-lg">KomOtradnoe@yandex.ru</span>
+                  </a>
                   <div className="flex items-center gap-3 text-gray-700">
                     <Icon name="Clock" size={22} className="text-primary" />
                     <span className="text-lg">Ежедневно с 8:00 до 22:00</span>
