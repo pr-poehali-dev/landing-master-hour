@@ -266,46 +266,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="prices" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12 animate-fade-in">
-              <h2 className="text-4xl font-bold mb-4 text-gray-900">Прозрачные цены</h2>
-              <p className="text-lg text-gray-600">Без скрытых платежей и доплат</p>
-            </div>
-            
-            <Card className="border-2 shadow-lg">
-              <CardHeader className="bg-gradient-to-r from-primary to-secondary text-white">
-                <CardTitle className="text-2xl">Стоимость услуг</CardTitle>
-                <CardDescription className="text-white/90 text-base">Цены указаны за работу мастера</CardDescription>
-              </CardHeader>
-              <CardContent className="pt-6">
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center py-3 border-b">
-                    <span className="text-lg">Выезд мастера</span>
-                    <span className="text-xl font-bold text-primary">500 ₽</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3 border-b">
-                    <span className="text-lg">Час работы мастера</span>
-                    <span className="text-xl font-bold text-primary">1200 ₽</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3">
-                    <span className="text-lg">Срочный вызов</span>
-                    <span className="text-xl font-bold text-primary">+50%</span>
-                  </div>
-                </div>
-                
-                <div className="mt-8 p-4 bg-accent rounded-lg">
-                  <p className="text-center text-gray-700 font-medium flex items-center justify-center gap-2">
-                    <Icon name="Shield" size={20} className="text-primary" />
-                    Гарантия на все виды работ — 6 месяцев
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+
 
       <section id="contact" className="py-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
         <div className="container mx-auto px-4">
