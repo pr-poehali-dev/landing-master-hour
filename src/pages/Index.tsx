@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const Index = () => {
   const { toast } = useToast();
@@ -13,43 +14,125 @@ const Index = () => {
     phone: "",
     message: ""
   });
+  const [selectedService, setSelectedService] = useState<null | typeof services[0]>(null);
 
   const services = [
+    {
+      icon: "Gauge",
+      title: "Поверка счётчиков воды",
+      description: "Официальная поверка на дому, без демонтажа",
+      price: "750 ₽",
+      details: [
+        "Поверка счётчиков холодной и горячей воды на дому — демонтаж не требуется",
+        "Заполнение всех необходимых документов специалистом",
+        "Передача документов в ресурсный отдел — вам ничего делать не нужно",
+        "Внесение данных в государственный реестр ФГИС «Аршин»",
+        "Есть скидки для льготных категорий граждан"
+      ]
+    },
+    {
+      icon: "RefreshCw",
+      title: "Замена счётчиков воды",
+      description: "Демонтаж старых и монтаж новых счётчиков",
+      price: "2 300 ₽",
+      details: [
+        "Демонтаж старых вышедших из строя или устаревших счётчиков",
+        "Монтаж новых счётчиков холодной и/или горячей воды",
+        "Опломбировка новых приборов учёта",
+        "Оформление и сдача всех документов в ресурсный отдел",
+        "Гарантия на выполненные работы"
+      ]
+    },
+    {
+      icon: "PlusCircle",
+      title: "Первичная установка водосчётчиков",
+      description: "Врезка счётчиков в систему водоснабжения",
+      price: "4 500 ₽",
+      details: [
+        "Врезка новых счётчиков воды в существующую разводку квартиры",
+        "Монтаж запорной арматуры и фильтров при необходимости",
+        "Опломбировка установленных приборов учёта",
+        "Оформление и сдача всех документов в ресурсный отдел",
+        "Внесение данных в реестр ФГИС «Аршин»"
+      ]
+    },
     {
       icon: "Wrench",
       title: "Электромонтажные работы",
       description: "Замена розеток, выключателей, светильников",
-      price: "от 600 ₽"
+      price: "от 600 ₽",
+      details: [
+        "Замена розеток и выключателей любого типа",
+        "Монтаж и замена светильников, люстр, бра",
+        "Установка и подключение электроприборов",
+        "Диагностика электропроводки",
+        "Все работы выполняются с соблюдением норм безопасности"
+      ]
     },
     {
       icon: "Droplets",
       title: "Сантехнические работы",
       description: "Установка смесителей, замена труб, устранение протечек",
-      price: "от 600 ₽"
+      price: "от 600 ₽",
+      details: [
+        "Установка и замена смесителей на кухне и в ванной",
+        "Устранение протечек и засоров",
+        "Замена труб холодной и горячей воды",
+        "Установка унитазов, ванн, душевых кабин",
+        "Работы выполняются аккредитованными специалистами"
+      ]
     },
     {
       icon: "Paintbrush",
       title: "Косметический ремонт",
       description: "Покраска, поклейка обоев, шпатлевка",
-      price: "от 600 ₽"
+      price: "от 600 ₽",
+      details: [
+        "Шпатлевка и выравнивание стен и потолков",
+        "Покраска поверхностей любой сложности",
+        "Поклейка обоев — флизелиновых, виниловых, бумажных",
+        "Укладка плитки и ламината",
+        "Финишная отделка и уборка после работ"
+      ]
     },
     {
       icon: "Hammer",
       title: "Сборка мебели",
       description: "Монтаж шкафов, полок, установка карнизов",
-      price: "от 600 ₽"
+      price: "от 600 ₽",
+      details: [
+        "Сборка корпусной мебели любой сложности",
+        "Установка и крепление полок, стеллажей",
+        "Монтаж карнизов для штор",
+        "Навеска зеркал, картин, телевизоров",
+        "Работа с любыми типами стен: бетон, гипсокартон, кирпич"
+      ]
     },
     {
       icon: "Settings",
       title: "Ремонт техники",
       description: "Мелкий ремонт бытовой техники и электроники",
-      price: "от 600 ₽"
+      price: "от 600 ₽",
+      details: [
+        "Диагностика и мелкий ремонт бытовой техники",
+        "Устранение неисправностей электроники",
+        "Замена расходных деталей и элементов",
+        "Подключение и настройка оборудования",
+        "Выезд мастера на дом в удобное время"
+      ]
     },
     {
       icon: "Home",
       title: "Общестроительные работы",
       description: "Установка дверей, замена замков, мелкий ремонт",
-      price: "от 600 ₽"
+      price: "от 600 ₽",
+      details: [
+        "Установка и регулировка межкомнатных дверей",
+        "Замена и установка дверных замков",
+        "Мелкий ремонт полов, плинтусов, наличников",
+        "Заделка трещин, дыр, штробление стен",
+        "Любые строительные работы малого объёма"
+      ]
     }
   ];
 
@@ -170,8 +253,9 @@ const Index = () => {
             {services.map((service, index) => (
               <Card 
                 key={index} 
-                className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 animate-scale-in"
+                className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 animate-scale-in cursor-pointer group"
                 style={{ animationDelay: `${index * 100}ms` }}
+                onClick={() => setSelectedService(service)}
               >
                 <CardHeader>
                   <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4">
@@ -180,12 +264,49 @@ const Index = () => {
                   <CardTitle className="text-xl">{service.title}</CardTitle>
                   <CardDescription className="text-base">{service.description}</CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex items-center justify-between">
                   <p className="text-2xl font-bold text-primary">{service.price}</p>
+                  <span className="text-sm text-gray-400 group-hover:text-primary transition-colors flex items-center gap-1">
+                    Подробнее <Icon name="ChevronRight" size={16} />
+                  </span>
                 </CardContent>
               </Card>
             ))}
           </div>
+
+          <Dialog open={!!selectedService} onOpenChange={() => setSelectedService(null)}>
+            <DialogContent className="max-w-lg">
+              {selectedService && (
+                <>
+                  <DialogHeader>
+                    <div className="flex items-center gap-4 mb-2">
+                      <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Icon name={selectedService.icon} size={28} className="text-primary" />
+                      </div>
+                      <div>
+                        <DialogTitle className="text-xl leading-snug">{selectedService.title}</DialogTitle>
+                        <p className="text-3xl font-bold text-primary mt-1">{selectedService.price}</p>
+                      </div>
+                    </div>
+                  </DialogHeader>
+                  <ul className="space-y-3 my-2">
+                    {selectedService.details.map((item, i) => (
+                      <li key={i} className="flex items-start gap-3 text-gray-700">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-primary flex-shrink-0" />
+                        <span className="leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <a href="tel:84992013135" className="block mt-4">
+                    <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-lg py-6">
+                      <Icon name="Phone" size={20} className="mr-2" />
+                      Записаться — 8 (499) 201-31-35
+                    </Button>
+                  </a>
+                </>
+              )}
+            </DialogContent>
+          </Dialog>
         </div>
       </section>
 
