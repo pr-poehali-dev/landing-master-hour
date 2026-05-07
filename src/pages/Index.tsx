@@ -512,7 +512,7 @@ const Index = () => {
                   </a>
                   <div className="flex items-center gap-3 text-gray-700">
                     <Icon name="Clock" size={22} className="text-primary" />
-                    <span className="text-lg">Ежедневно с 8:00 до 22:00</span>
+                    <span className="text-lg">Пн–Пт с 8:00 до 17:00</span>
                   </div>
                 </div>
               </CardContent>
