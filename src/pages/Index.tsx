@@ -417,12 +417,12 @@ const Index = () => {
             <p className="text-gray-400 mb-6">
               Профессиональные мастера для решения ваших бытовых задач
             </p>
-            <div className="flex justify-center gap-6 mb-6">
+            <div className="flex flex-wrap justify-center gap-6 mb-6">
               <a href="#services" className="hover:text-primary transition-colors">Услуги</a>
               <a href="#portfolio" className="hover:text-primary transition-colors">Портфолио</a>
               <a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a>
-              <a href="#prices" className="hover:text-primary transition-colors">Цены</a>
               <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
+              <a href="/articles" className="hover:text-primary transition-colors font-medium text-white/90">Полезные советы</a>
             </div>
             <p className="text-gray-500 text-sm">
               © 2024 Мастер на час. Все права защищены.
