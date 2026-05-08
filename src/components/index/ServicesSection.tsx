@@ -284,26 +284,26 @@ const ServicesSection = () => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a href="tel:84992013135" className="group">
-                <div className="flex items-center gap-4 bg-white border-2 border-gray-100 hover:border-primary/40 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+              <a href="tel:84992013135" className="group" onClick={() => window.location.href = 'tel:84992013135'}>
+                <div className="flex items-center gap-4 bg-white border-2 border-gray-100 hover:border-primary/40 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer">
                   <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                     <Icon name="Phone" size={26} className="text-primary" />
                   </div>
                   <div>
                     <p className="text-xs text-gray-400 mb-0.5">Телефон</p>
                     <p className="text-lg font-bold text-gray-900">8 (499) 201-31-35</p>
-                    <p className="text-xs text-gray-400 mt-0.5">Позвонить сейчас</p>
+                    <p className="text-xs text-green-500 mt-0.5 font-medium">Нажмите, чтобы позвонить</p>
                   </div>
                 </div>
               </a>
 
               <a href="https://wa.me/79966547924" target="_blank" rel="noopener noreferrer" className="group">
-                <div className="flex items-center gap-4 bg-white border-2 border-gray-100 hover:border-green-300 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
-                  <div className="w-14 h-14 bg-green-50 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
-                    <Icon name="MessageCircle" size={26} className="text-green-600" />
+                <div className="flex items-center gap-4 bg-white border-2 border-gray-100 hover:border-purple-300 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden flex-shrink-0">
+                    <img src="https://cdn.poehali.dev/projects/2290166f-2258-4976-a76b-89e777208a1e/bucket/bf32e594-29a9-4f48-8cb0-5c4295cd08d1.jpg" alt="MAX" className="w-full h-full object-cover" />
                   </div>
                   <div>
-                    <p className="text-xs text-gray-400 mb-0.5">WhatsApp</p>
+                    <p className="text-xs text-gray-400 mb-0.5">Чат MAX</p>
                     <p className="text-lg font-bold text-gray-900">+7 (996) 654-79-24</p>
                     <p className="text-xs text-gray-400 mt-0.5">Написать в чат</p>
                   </div>
