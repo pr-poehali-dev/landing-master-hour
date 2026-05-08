@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "GET visitors stats",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {"today": "number", "month": "number", "year": "number"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

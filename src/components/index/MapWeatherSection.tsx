@@ -1,6 +1,24 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import func2url from "../../../backend/func2url.json";
+
+interface VisitorStats {
+  today: number;
+  month: number;
+  year: number;
+}
+
+function useVisitors() {
+  const [stats, setStats] = useState<VisitorStats | null>(null);
+  useEffect(() => {
+    fetch(func2url.visitors, { method: 'POST' })
+      .then(r => r.json())
+      .then(setStats)
+      .catch(() => {});
+  }, []);
+  return stats;
+}
 
 interface WeatherDay {
   date: string;
@@ -49,6 +67,7 @@ function formatDay(dateStr: string, i: number): string {
 
 const MapWeatherSection = () => {
   const weatherDays = useWeather();
+  const visitors = useVisitors();
 
   return (
     <section className="bg-gray-900 py-10">
@@ -108,6 +127,27 @@ const MapWeatherSection = () => {
                     </div>
                   );
                 })}
+              </div>
+
+              <div className="mt-5">
+                <h3 className="text-white text-base font-bold mb-3 flex items-center gap-2">
+                  <Icon name="Users" size={18} className="text-primary" />
+                  Посетители сайта
+                </h3>
+                <div className="grid grid-cols-3 gap-2">
+                  {[
+                    { label: 'Сегодня', value: visitors?.today },
+                    { label: 'Месяц', value: visitors?.month },
+                    { label: 'Год', value: visitors?.year },
+                  ].map(({ label, value }) => (
+                    <div key={label} className="bg-gray-800 rounded-xl px-3 py-3 text-center">
+                      <div className="text-white text-xl font-bold">
+                        {value !== undefined ? value : '—'}
+                      </div>
+                      <div className="text-gray-400 text-xs mt-0.5">{label}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
