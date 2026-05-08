@@ -16,6 +16,7 @@ const SiteFooter = () => (
           <a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a>
           <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
           <a href="/articles" className="hover:text-primary transition-colors font-medium text-white/90">Полезные советы</a>
+          <a href="/history" className="hover:text-primary transition-colors font-medium text-white/90">История района</a>
         </div>
         <div className="border-t border-gray-700 pt-6 mb-6 text-left bg-gray-800/50 rounded-xl p-5 text-sm text-gray-400 space-y-1">
           <p className="text-gray-300 font-semibold mb-2 flex items-center gap-2">
