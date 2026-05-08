@@ -28,7 +28,7 @@ const services = [
       "Монтаж новых счётчиков холодной и/или горячей воды",
       "Опломбировка новых приборов учёта",
       "Оформление и сдача всех документов в ресурсный отдел",
-      "Гарантия на выполненные работы"
+      "Гарантия на выполненные работы — 12 месяцев*"
     ]
   },
   {
@@ -223,6 +223,9 @@ const ServicesSection = () => {
                       </li>
                     ))}
                   </ul>
+                  {selectedService.details.some(d => d.includes('*')) && (
+                    <p className="text-xs text-gray-400 mt-1">* при предъявлении договора</p>
+                  )}
                   <a href="tel:84992013135" className="block mt-4">
                     <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-lg py-6">
                       <Icon name="Phone" size={20} className="mr-2" />
