@@ -495,6 +495,18 @@ const Index = () => {
                 title="Карта: ул. Каргопольская, д. 17"
               />
             </div>
+            <div className="mt-4">
+              <a
+                href="https://yandex.ru/maps/?rtext=~55.864900,37.680200&rtt=auto"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-5">
+                  <Icon name="Navigation" size={18} className="mr-2" />
+                  Построить маршрут
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
