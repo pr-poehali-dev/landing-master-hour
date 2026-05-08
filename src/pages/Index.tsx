@@ -477,6 +477,28 @@ const Index = () => {
         <Icon name="MessageCircle" size={32} />
       </a>
 
+      <section className="bg-gray-900 py-10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-white text-xl font-bold mb-2 flex items-center gap-2">
+              <Icon name="MapPin" size={20} className="text-primary" />
+              Наш адрес
+            </h3>
+            <p className="text-gray-400 text-sm mb-4">г. Москва, ул. Каргопольская, д. 17, подъезд 4, кабинет 3</p>
+            <div className="rounded-2xl overflow-hidden w-full h-72">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?ll=37.680200%2C55.864900&z=17&pt=37.680200,55.864900,pm2rdm~37.680200,55.864900,pm2rdl&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9A%D0%B0%D1%80%D0%B3%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%2C%20%D0%B4.%2017"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                title="Карта: ул. Каргопольская, д. 17"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
