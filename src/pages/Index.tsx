@@ -5,6 +5,7 @@ import SiteHeader from "@/components/index/SiteHeader";
 import ServicesSection from "@/components/index/ServicesSection";
 import MapWeatherSection from "@/components/index/MapWeatherSection";
 import SiteFooter from "@/components/index/SiteFooter";
+import CallPopup from "@/components/index/CallPopup";
 
 function useScrollReveal() {
   useEffect(() => {
@@ -24,6 +25,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SiteHeader />
+      <CallPopup />
 
       <section className="pt-32 pb-20 bg-gradient-to-br from-accent via-white to-blue-50">
         <div className="container mx-auto px-4">
