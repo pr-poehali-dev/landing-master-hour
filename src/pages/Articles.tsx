@@ -416,7 +416,18 @@ const Articles = () => {
                 </div>
               ))}
 
-              {selected.id === 2 ? (
+              {[5, 6, 7].includes(selected.id) ? (
+                <div className="mt-10 bg-primary/5 rounded-2xl p-8 border-2 border-primary/20 text-center">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Не рискуйте — вызовите мастера</h3>
+                  <p className="text-gray-600 mb-5">ГБУ «Жилищник района Отрадное» — приедем в день обращения, пн–пт с 8:00 до 17:00</p>
+                  <a href="tel:84992013135">
+                    <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-10 py-6">
+                      <Icon name="Phone" size={20} className="mr-2" />
+                      Вызвать мастера
+                    </Button>
+                  </a>
+                </div>
+              ) : selected.id === 2 ? (
                 <div className="mt-10 bg-primary/5 rounded-2xl p-8 border-2 border-primary/20 text-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Вопросы по сдаче документов?</h3>
                   <p className="text-gray-600 mb-5">Ресурсный отдел ГБУ «Жилищник района Отрадное» — Пн 8:00–17:00, Вт и Чт 11:00–20:00</p>
