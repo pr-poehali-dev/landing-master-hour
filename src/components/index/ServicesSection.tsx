@@ -240,7 +240,7 @@ const ServicesSection = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">Отзывы клиентов</h2>
-            <p className="text-lg text-gray-600">Нам доверяют тысячи семей</p>
+            <p className="text-lg text-gray-600">Нас рекомендуют жители Отрадного</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
