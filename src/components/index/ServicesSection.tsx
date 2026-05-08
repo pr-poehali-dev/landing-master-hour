@@ -338,22 +338,7 @@ const ServicesSection = () => {
         </div>
       </section>
 
-      <section className="py-10 bg-white scroll-reveal">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <p className="text-center text-xs text-gray-400 mb-4">Реклама</p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <a target="_blank" rel="nofollow" href="https://dkfrh.com/g/g868s26t045da5bb3afda277ac0837/?i=4&subid=master&erid=2bL9aMPo2e49hMef4pfysY26Ez" className="flex-shrink-0">
-                <img width="240" height="400" border={0} src="https://aflink.ru/b/g868s26t045da5bb3afda277ac0837/" alt="OZON Travel" className="w-[240px] h-[400px] object-cover rounded-xl shadow-md hover:shadow-lg transition-shadow" />
-              </a>
-              <a target="_blank" rel="nofollow" href="https://dorinebeaumont.com/g/1f04hgqyjx5da5bb3afdccddac0aa6/?i=4&subid=master&erid=2bL9aMPo2e49hMef4piUPtz5CJ" className="flex-shrink-0">
-                <img width="240" height="400" border={0} src="https://aflink.ru/b/1f04hgqyjx5da5bb3afdccddac0aa6/" alt="Broadway-moscow" className="w-[240px] h-[400px] object-cover rounded-xl shadow-md hover:shadow-lg transition-shadow" />
-              </a>
-            </div>
-            <p className="text-center text-[10px] text-gray-300 mt-3">erid: Y1jgkD6uB6jK1phqkTLTbNJPorAE</p>
-          </div>
-        </div>
-      </section>
+
     </>
   );
 };
