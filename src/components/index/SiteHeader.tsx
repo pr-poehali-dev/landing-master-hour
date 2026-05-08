@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function getSunTimes() {
   const now = new Date();
@@ -29,6 +30,7 @@ function getSunTimes() {
 }
 
 const SiteHeader = () => {
+  const navigate = useNavigate();
   const [time, setTime] = useState(() => {
     const now = new Date();
     return now.toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit", second: "2-digit", timeZone: "Europe/Moscow" });
@@ -45,7 +47,7 @@ const SiteHeader = () => {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-primary flex items-center gap-2">
+        <h1 className="text-2xl font-bold text-primary flex items-center gap-2 cursor-pointer" onClick={() => navigate("/")}>
           <img src="https://cdn.poehali.dev/projects/2290166f-2258-4976-a76b-89e777208a1e/bucket/0210cde3-4a1e-4595-bdbd-1b77b44fc26a.png" alt="Герб района Отрадное" className="w-9 h-9 object-contain" />
           <span>Мастер на час <span className="text-base font-normal text-gray-500">в Отрадном СВАО г. Москвы</span></span>
         </h1>
