@@ -43,11 +43,11 @@ const ArticlesList = ({ articles, onSelect }: ArticlesListProps) => (
       ))}
     </div>
 
-    <div className="mt-16 text-center bg-primary/5 rounded-2xl p-10 border-2 border-primary/20">
+    <div className="mt-16 text-center bg-primary/5 rounded-2xl p-5 sm:p-10 border-2 border-primary/20">
       <h3 className="text-2xl font-bold text-gray-900 mb-3">Нужна помощь мастера?</h3>
       <p className="text-gray-600 mb-6">Вызовите профессионала — приедем в день обращения</p>
       <a href="tel:84992013135">
-        <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-10 py-6">
+        <Button size="lg" className="bg-primary hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-10 py-4 sm:py-6 w-full sm:w-auto">
           <Icon name="Phone" size={20} className="mr-2" />
           Вызвать мастера
         </Button>

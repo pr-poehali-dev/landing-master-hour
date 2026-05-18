@@ -134,7 +134,7 @@ const MapWeatherSection = () => {
                   <Icon name="Users" size={18} className="text-primary" />
                   Посетители сайта
                 </h3>
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-3 gap-1 sm:gap-2">
                   {[
                     { label: 'Сегодня', value: visitors?.today },
                     { label: 'Месяц', value: visitors?.month },

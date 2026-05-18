@@ -31,7 +31,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
             <div className="animate-fade-in">
-              <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
                 Ваш комфорт — наша забота!
               </h2>
               <p className="text-xl md:text-2xl text-gray-700 mb-8 font-medium">
@@ -74,7 +74,7 @@ const Index = () => {
         href="https://wa.me/79966547924"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 animate-scale-in"
+        className="fixed bottom-24 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 animate-scale-in"
         aria-label="Написать в WhatsApp"
       >
         <Icon name="MessageCircle" size={32} />
