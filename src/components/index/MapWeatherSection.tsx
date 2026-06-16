@@ -43,17 +43,10 @@ function getWeatherDesc(code: number): { label: string; icon: string } {
 function useWeather() {
   const [days, setDays] = useState<WeatherDay[]>([]);
   useEffect(() => {
-    fetch("https://api.open-meteo.com/v1/forecast?latitude=55.8649&longitude=37.6802&daily=temperature_2m_max,temperature_2m_min,weathercode&timezone=Europe%2FMoscow&forecast_days=3")
+    fetch(func2url.weather)
       .then(r => r.json())
-      .then(data => {
-        const result: WeatherDay[] = data.daily.time.map((date: string, i: number) => ({
-          date,
-          tempMax: Math.round(data.daily.temperature_2m_max[i]),
-          tempMin: Math.round(data.daily.temperature_2m_min[i]),
-          code: data.daily.weathercode[i],
-        }));
-        setDays(result);
-      });
+      .then(data => setDays(data.days))
+      .catch(() => {});
   }, []);
   return days;
 }
