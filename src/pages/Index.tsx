@@ -38,7 +38,7 @@ const Index = () => {
                 Мелкий ремонт и бытовые услуги по ценам утвержденным Префектурой СВАО г. Москвы
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:89966547924">
+                <a href="tel:84992013135">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
                     <Icon name="Phone" size={20} className="mr-2" />
                     Вызвать мастера

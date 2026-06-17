@@ -77,7 +77,7 @@ const VacancyDialog = ({ open, onClose }: { open: boolean; onClose: () => void }
         </div>
         <div className="bg-gray-50 rounded-lg p-4 space-y-1">
           <p className="font-semibold text-gray-800">Отклик на вакансию:</p>
-          <p className="text-gray-600">ул. Каргопольская, д. 17, каб. 3</p>
+          <p className="text-gray-600">ул. Каргопольская, д. 17, подъезд 4, каб. 3</p>
           <a href="tel:+74992013135" className="text-primary font-medium hover:underline">8-499-201-31-35</a>
           <p className="text-gray-500 text-xs">Пн–Пт с 8:00 до 17:00</p>
         </div>
