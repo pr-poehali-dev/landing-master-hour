@@ -307,18 +307,6 @@ const ServicesSection = () => {
                 </div>
               </a>
 
-              <a href="https://wa.me/79966547924" target="_blank" rel="noopener noreferrer" className="group">
-                <div className="flex items-center gap-4 bg-white border-2 border-gray-100 hover:border-purple-300 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
-                  <div className="w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden flex-shrink-0">
-                    <img src="https://cdn.poehali.dev/projects/2290166f-2258-4976-a76b-89e777208a1e/bucket/bf32e594-29a9-4f48-8cb0-5c4295cd08d1.jpg" alt="MAX" className="w-full h-full object-cover" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-400 mb-0.5">Чат MAX</p>
-                    <p className="text-lg font-bold text-gray-900">+7 (996) 654-79-24</p>
-                    <p className="text-xs text-gray-400 mt-0.5">Написать в чат</p>
-                  </div>
-                </div>
-              </a>
 
               <a href="mailto:KomOtradnoe@yandex.ru" className="group">
                 <div className="flex items-center gap-4 bg-white border-2 border-gray-100 hover:border-primary/40 rounded-2xl p-5 shadow-sm hover:shadow-md transition-all duration-300">
