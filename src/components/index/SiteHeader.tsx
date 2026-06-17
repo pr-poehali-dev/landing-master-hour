@@ -76,7 +76,17 @@ const SiteHeader = () => {
             <span className="hidden sm:block text-[10px] text-gray-400 leading-tight text-center">ВКонтакте</span>
             <span className="hidden sm:block text-[9px] text-gray-400 leading-tight text-center">Официальный канал</span>
           </a>
-
+          <a
+            href="https://max.ru/id7715488558_gos"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center gap-0.5 text-sm font-medium text-gray-600 hover:text-primary transition-colors border border-gray-200 rounded-lg px-2 py-2 sm:px-3"
+            title="MAX — Официальный канал ГБУ «Жилищник района Отрадное»"
+          >
+            <Icon name="Send" size={18} className="text-primary" />
+            <span className="hidden sm:block text-[10px] text-gray-400 leading-tight text-center">MAX</span>
+            <span className="hidden sm:block text-[9px] text-gray-400 leading-tight text-center">Официальный канал</span>
+          </a>
           <a href="tel:84992013135">
             <Button className="bg-primary hover:bg-primary/90 text-sm sm:text-base px-3 sm:px-4">
               <Icon name="Phone" size={16} className="sm:mr-2" />
