@@ -13,7 +13,7 @@ const ArticleDetail = ({ article, onBack }: { article: HistoryArticle; onBack: (
       <Icon name="ArrowLeft" size={18} />
       Назад к статьям
     </button>
-    <img src={article.image} alt={article.title} className="w-full h-72 object-cover rounded-2xl mb-8 shadow-lg" />
+    <img src={article.image} alt={article.title} loading="lazy" decoding="async" className="w-full h-72 object-cover rounded-2xl mb-8 shadow-lg" />
     <div className="flex items-center gap-3 text-sm text-gray-400 mb-4">
       <span>{article.date}</span>
       <span>·</span>
@@ -56,7 +56,10 @@ const History = () => {
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content="История московского района Отрадное: от деревни до современного мегаполиса. Усадьбы, парки, метро и люди, которые здесь жили." />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://master-otradnoe.ru/history" />
       </Helmet>
 
       <SiteHeader />
@@ -82,7 +85,7 @@ const History = () => {
                   className="border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer overflow-hidden"
                   onClick={() => setOpenId(article.id)}
                 >
-                  <img src={article.image} alt={article.title} className="w-full h-48 object-cover" />
+                  <img src={article.image} alt={article.title} loading="lazy" decoding="async" className="w-full h-48 object-cover" />
                   <CardContent className="p-6">
                     <div className="flex items-center gap-3 text-xs text-gray-400 mb-3">
                       <span>{article.date}</span>

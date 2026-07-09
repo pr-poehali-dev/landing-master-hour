@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import SiteHeader from "@/components/index/SiteHeader";
 import ServicesSection from "@/components/index/ServicesSection";
 import MapWeatherSection from "@/components/index/MapWeatherSection";
@@ -24,16 +25,28 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Мастер на час Отрадное — вызов сантехника, электрика на дом</title>
+        <meta name="description" content="Вызов мастера на дом в районе Отрадное (Москва): сантехник, электрик, плотник. Устранение засоров, замена батарей, ремонт кранов и труб. ГБУ Жилищник района Отрадное — приедем в день обращения." />
+        <meta name="keywords" content="мастер на час Отрадное, сантехник Отрадное, вызвать сантехника Отрадное, электрик Отрадное, ГБУ Жилищник Отрадное, замена батарей Отрадное, засор труб, течёт кран, ремонт сантехники, поверка счётчиков воды, мастер на час Москва, сантехник на дом, аварийный сантехник Отрадное" />
+        <meta property="og:title" content="Мастер на час Отрадное" />
+        <meta property="og:description" content="Вызов мастера на дом в районе Отрадное: сантехник, электрик, плотник. Устранение засоров, замена батарей, ремонт кранов. Приедем в день обращения." />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://master-otradnoe.ru/" />
+      </Helmet>
+
       <SiteHeader />
       <CallPopup />
 
+      <main>
       <section className="pt-32 pb-20 bg-gradient-to-br from-accent via-white to-blue-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
             <div className="animate-fade-in">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
                 Ваш комфорт — наша забота!
-              </h2>
+              </h1>
               <p className="text-xl md:text-2xl text-gray-700 mb-8 font-medium">
                 Мелкий ремонт и бытовые услуги по ценам утвержденным Префектурой СВАО г. Москвы
               </p>
@@ -81,6 +94,7 @@ const Index = () => {
       </a>
 
       <MapWeatherSection />
+      </main>
 
       <SiteFooter />
     </div>
