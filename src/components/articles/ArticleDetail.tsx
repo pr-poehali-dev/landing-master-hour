@@ -59,7 +59,7 @@ const ArticleDetail = ({ article }: ArticleDetailProps) => (
       <div className="mt-10 bg-primary/5 rounded-2xl p-4 sm:p-8 border-2 border-primary/20 text-center">
         <h3 className="text-xl font-bold text-gray-900 mb-2">Вопросы по сдаче документов?</h3>
         <p className="text-gray-600 mb-5">Ресурсный отдел ГБУ «Жилищник района Отрадное» — Пн 8:00–17:00, Вт и Чт 11:00–20:00</p>
-        <a href="tel:74999071419">
+        <a href="tel:+74999071419">
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-10 py-4 sm:py-6 w-full sm:w-auto">
             <Icon name="Phone" size={20} className="mr-2" />
             +7 (499) 907-14-19
