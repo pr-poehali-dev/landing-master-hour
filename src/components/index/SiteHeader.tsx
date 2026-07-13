@@ -48,7 +48,7 @@ const SiteHeader = () => {
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <h1 className="text-2xl font-bold text-primary flex items-center gap-2 cursor-pointer" onClick={() => navigate("/")}>
-          <img src="https://cdn.poehali.dev/projects/2290166f-2258-4976-a76b-89e777208a1e/bucket/0210cde3-4a1e-4595-bdbd-1b77b44fc26a.png" alt="Герб района Отрадное" className="w-9 h-9 object-contain" />
+          <img src="/images/gbu-zhilishchnik-otradnoe-gerb-logo.png" alt="Герб ГБУ «Жилищник района Отрадное»" className="w-9 h-9 object-contain" />
           <span>Мастер на час <span className="text-base font-normal text-gray-500">в Отрадном СВАО г. Москвы</span></span>
         </h1>
         <div className="flex items-center gap-2">

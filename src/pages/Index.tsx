@@ -68,8 +68,10 @@ const Index = () => {
             <div className="animate-scale-in hidden md:block">
               <div className="relative">
                 <img
-                  src="https://cdn.poehali.dev/projects/2290166f-2258-4976-a76b-89e777208a1e/bucket/7fe5525a-20dc-469d-b5c8-15aa92864840.jpg"
-                  alt="Наша команда"
+                  src="/images/gbu-zhilishchnik-otradnoe-komanda-masterov.jpg"
+                  alt="Команда мастеров ГБУ «Жилищник района Отрадное»"
+                  loading="lazy"
+                  decoding="async"
                   className="rounded-2xl shadow-2xl w-full"
                 />
                 <div className="absolute bottom-4 left-0 right-0 text-center">
