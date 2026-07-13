@@ -1,25 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://master-otradnoe.ru/</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://master-otradnoe.ru/images/gbu-zhilishchnik-otradnoe-komanda-masterov.jpg</image:loc>
+      <image:title>Команда мастеров ГБУ «Жилищник района Отрадное»</image:title>
+      <image:caption>Мастера ГБУ «Жилищник района Отрадное» — вызов сантехника, электрика на дом</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://master-otradnoe.ru/images/gbu-zhilishchnik-otradnoe-gerb-logo.png</image:loc>
+      <image:title>Герб ГБУ «Жилищник района Отрадное»</image:title>
+      <image:caption>Герб ГБУ «Жилищник района Отрадное»</image:caption>
+    </image:image>
   </url>
 
   <url>
     <loc>https://master-otradnoe.ru/articles</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://master-otradnoe.ru/images/gbu-zhilishchnik-otradnoe-master-na-chas.jpg</image:loc>
+      <image:title>Полезные советы от ГБУ «Жилищник района Отрадное»</image:title>
+      <image:caption>Советы по ремонту и сантехнике от мастеров ГБУ «Жилищник района Отрадное»</image:caption>
+    </image:image>
   </url>
 
   <url>
     <loc>https://master-otradnoe.ru/history</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://master-otradnoe.ru/images/gbu-zhilishchnik-otradnoe-istoriya-rayona.jpg</image:loc>
+      <image:title>История района Отрадное</image:title>
+      <image:caption>История московского района Отрадное — от деревни до современного мегаполиса</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://master-otradnoe.ru/images/gbu-zhilishchnik-otradnoe-usadba-leonovo.jpg</image:loc>
+      <image:title>Усадьба Леоново в районе Отрадное</image:title>
+      <image:caption>Усадьба Леоново — дворянская история в сердце Отрадного</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://master-otradnoe.ru/images/gbu-zhilishchnik-otradnoe-znamenitye-zhiteli.jpg</image:loc>
+      <image:title>Знаменитые жители района Отрадное</image:title>
+      <image:caption>Люди и судьбы — знаменитые жители района Отрадное</image:caption>
+    </image:image>
   </url>
 
 </urlset>
