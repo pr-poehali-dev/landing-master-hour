@@ -255,12 +255,17 @@ const ServicesSection = () => {
 
           <div className="max-w-3xl mx-auto mb-12 animate-fade-in">
             <div className="rounded-2xl overflow-hidden shadow-lg w-full aspect-video">
-              <iframe
-                src="https://www.m24.ru/videos/02082026/926198/external"
+              <video
+                src="/videos/poverka-schetchikov.mp4"
+                poster="/videos/poverka-schetchikov-poster.jpg"
                 width="100%"
                 height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
                 title="Москвичам рассказали, как правильно делать поверку счетчиков"
               />
             </div>
