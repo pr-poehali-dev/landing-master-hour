@@ -253,6 +253,19 @@ const ServicesSection = () => {
             <p className="text-lg text-gray-600">Нас рекомендуют жители Отрадного</p>
           </div>
 
+          <div className="max-w-3xl mx-auto mb-12 animate-fade-in">
+            <div className="rounded-2xl overflow-hidden shadow-lg w-full aspect-video">
+              <iframe
+                src="https://www.m24.ru/videos/02082026/926198/external"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                title="Москвичам рассказали, как правильно делать поверку счетчиков"
+              />
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {reviews.map((review, index) => (
               <Card key={index} className="border-2 hover:shadow-lg transition-shadow animate-scale-in" style={{ animationDelay: `${index * 150}ms` }}>
