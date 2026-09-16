@@ -266,6 +266,7 @@ const ServicesSection = () => {
                 muted
                 playsInline
                 controls
+                preload="metadata"
                 title="Москвичам рассказали, как правильно делать поверку счетчиков"
               />
             </div>

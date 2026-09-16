@@ -18,7 +18,7 @@ export const historyArticles: HistoryArticle[] = [
     description: "История превращения небольшого подмосковного поселения в один из крупнейших спальных районов северо-востока Москвы.",
     date: "1 мая 2025",
     readTime: "5 мин",
-    image: "/images/gbu-zhilishchnik-otradnoe-istoriya-rayona.jpg",
+    image: "/images/gbu-zhilishchnik-otradnoe-istoriya-rayona.webp",
     content: {
       intro: "Район Отрадное — один из крупнейших жилых массивов Северо-Восточного административного округа Москвы. Сегодня здесь живут более 130 тысяч человек. Но ещё в середине XX века на этом месте располагались деревня и дачные угодья Подмосковья.",
       sections: [
@@ -52,7 +52,7 @@ export const historyArticles: HistoryArticle[] = [
     description: "На территории современного района располагалась знаменитая усадьба Леоново, история которой насчитывает несколько веков.",
     date: "1 мая 2025",
     readTime: "6 мин",
-    image: "/images/gbu-zhilishchnik-otradnoe-usadba-leonovo.jpg",
+    image: "/images/gbu-zhilishchnik-otradnoe-usadba-leonovo.webp",
     content: {
       intro: "Немногие жители Отрадного знают, что под их ногами — история нескольких веков московского дворянства. На территории нынешнего района находилась усадьба Леоново, оставившая заметный след в истории Москвы.",
       sections: [
@@ -86,7 +86,7 @@ export const historyArticles: HistoryArticle[] = [
     description: "История появления станции «Отрадное» и то, как метро изменило облик и жизнь всего района.",
     date: "2 мая 2025",
     readTime: "4 мин",
-    image: "/images/gbu-zhilishchnik-otradnoe-istoriya-rayona.jpg",
+    image: "/images/gbu-zhilishchnik-otradnoe-istoriya-rayona.webp",
     content: {
       intro: "Метро — это артерия большого города. Для Отрадного открытие собственной станции стало настоящим событием, которого жители ждали десятилетиями. История прокладки Серпуховско-Тимирязевской линии до Отрадного — это история упорства и большого строительства.",
       sections: [
@@ -121,7 +121,7 @@ export const historyArticles: HistoryArticle[] = [
     description: "Отрадное — один из самых зелёных районов Москвы. История создания местных парков, прудов и природных территорий.",
     date: "3 мая 2025",
     readTime: "5 мин",
-    image: "/images/gbu-zhilishchnik-otradnoe-usadba-leonovo.jpg",
+    image: "/images/gbu-zhilishchnik-otradnoe-usadba-leonovo.webp",
     content: {
       intro: "Несмотря на плотную жилую застройку, Отрадное сохранило значительные зелёные территории. Местные парки и пруды — не просто место отдыха, но и живые свидетели истории этих мест, помнящие времена, когда здесь были деревни и дворянские усадьбы.",
       sections: [
@@ -156,7 +156,7 @@ export const historyArticles: HistoryArticle[] = [
     description: "С районом Отрадное связаны имена многих известных людей — учёных, спортсменов, деятелей культуры.",
     date: "4 мая 2025",
     readTime: "5 мин",
-    image: "/images/gbu-zhilishchnik-otradnoe-znamenitye-zhiteli.jpg",
+    image: "/images/gbu-zhilishchnik-otradnoe-znamenitye-zhiteli.webp",
     content: {
       intro: "История района — это прежде всего история людей, которые здесь жили и работали. Отрадное дало Москве и всей стране немало выдающихся личностей, чьи имена вписаны в отечественную историю науки, спорта и культуры.",
       sections: [

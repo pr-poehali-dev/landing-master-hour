@@ -68,7 +68,7 @@ const Index = () => {
             <div className="animate-scale-in hidden md:block">
               <div className="relative">
                 <img
-                  src="/images/gbu-zhilishchnik-otradnoe-komanda-masterov.jpg"
+                  src="/images/gbu-zhilishchnik-otradnoe-komanda-masterov.webp"
                   alt="Команда мастеров ГБУ «Жилищник района Отрадное»"
                   loading="lazy"
                   decoding="async"
