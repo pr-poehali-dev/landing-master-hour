@@ -8,7 +8,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import Articles from "./pages/Articles";
 import History from "./pages/History";
-import NotFound from "./pages/NotFound";
+import SeoNotFound from "./components/SeoNotFound";
 
 const queryClient = new QueryClient();
 
@@ -24,7 +24,7 @@ const App = () => (
           <Route path="/articles" element={<Articles />} />
           <Route path="/history" element={<History />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<SeoNotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
